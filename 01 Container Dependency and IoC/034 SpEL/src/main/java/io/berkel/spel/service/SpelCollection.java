@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component("spelCollection")
-public class SpELCollection {
+public class SpelCollection {
 
     @Value("#{carPark.carsByDriver['Driver1']}")
     private Car driver1Car;
