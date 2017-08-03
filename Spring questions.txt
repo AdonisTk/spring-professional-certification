@@ -1,0 +1,280 @@
+Container, Dependency, and IOC
+
+1) What is dependency injection and what are the advantages?
+	01 Dependency injection.pdf
+	
+2) What is an interface and what are the advantages of making use of them in Java?
+	02 Interfaces.pdf
+	
+3) What is meant by “application-context” and how do you create one?
+	03 Application context.pdf
+	
+4) What is the concept of a “container” and what is its lifecycle?
+	04 Containers and its lifecycle.pdf
+	
+5) Dependency injection using Java configuration
+	05 Java-based container configuration.pdf
+
+6) Dependency injection in XML, using constructor or setter injection
+	06 Constructor or Setter Injection.pdf
+
+7) Dependency injection using annotations (@Component, @Autowired)
+	07 Dependency injection using annotations.pdf
+	
+8) Component scanning, Stereotypes and Meta-Annotations
+	08 Component scanning, Stereotypes and Meta-Annotations.pdf
+	
+9) Scopes for Spring beans. What is the default?
+	09 Bean scopes.pdf
+	
+10) What is an initialization method and how is it declared in a Spring bean?
+11) What is a destroy method, how is it declared and when is it called?
+	10 11 Customizing the nature of a bean.pdf
+
+12) What is a BeanFactoryPostProcessor and what is it used for?
+13) What is a BeanPostProcessor and how is the difference to a BeanFactoryPostProcessor? What do they do? When are they called?
+	12 13 Container Extension Points.pdf
+
+14) Are beans lazily or eagerly instantiated by default? How do you alter this behavior?
+	14 Lazy-initialized beans.pdf
+
+15) What does component-scanning do?
+	15 Naming beans.pdf
+	
+16) What is the behavior of the annotation @Autowired with regards to field injection, constructor injection and method injection?
+17) How does the @Qualifier annotation complement the use of @Autowired?
+	16 17 Autowired with Setter Method, Field and Constructor.pdf
+
+18) What is the role of the @PostConstruct and @PreDestroy annotations? When will they get called?
+	18 PostConstruct and PreDestroy.pdf
+
+19) What is a proxy object and what are the two different types of proxies Spring can create?
+20) What is the power of a proxy object and where are the disadvantages?
+21) What are the limitations of these proxies (per type)?
+	https://spring.io/blog/2012/05/23/transactions-caching-and-aop-understanding-proxy-usage-in-spring
+	JDK- and CGLIB-based proxies
+	19 Proxy pattern.pdf
+
+22) How do you inject scalar/literal values into Spring beans?
+	22  XML Schema-based configuration.pdf
+
+23) How are you going to create a new instance of an ApplicationContext?
+24) What is a prefix?	
+	8.7 Application contexts and Resource paths
+
+25) What is the lifecycle on an ApplicationContext?
+	25 Spring Bean Life Cycle.pdf
+
+26) What does the @Bean annotation do?
+	26 Java-based container configuration.pdf
+
+27) How are you going to create an ApplicationContext in an integration test or a JUnit test?
+	https://github.com/fagaiera/springprofessionalcertification/tree/master/027%20JUnit%20Spring
+
+28) What do you have to do, if you would like to inject something into a private field?
+
+29) What are the advantages of JavaConfig? What are the limitations?
+	JavaConfig <-> Java-based container configuration
+	
+30) What is the default bean id if you only use "@Bean"?
+	
+
+31) Can you use @Bean together with @Profile?
+	31 Profile Annotation.pdf
+
+32) What is Spring Expression Language (SpEL for short)?
+	32 SpEL.pdf
+
+33) What is the environment abstraction in Spring?
+	33 Environment abstraction.pdf
+
+34) What can you reference using SpEL?
+	http://www.baeldung.com/spring-expression-language
+
+35) How do you configure a profile. What are possible use cases where they might be useful?
+	35 Profiles.pdf
+
+36) How many profiles can you have?
+
+37) How do you enable JSR-250 annotations like @PostConstruct?
+	Page 104 to 105
+
+38) Why are you not allowed to annotate a final class with @Configuration
+
+Page 112
+
+39)Why must you have a default constructor in your @Configuration annotated class?
+
+40) Why are you not allowed to annotate final methods with @Bean?
+
+41) What is the preferred way to close an application context?
+	41 Close Application Context.pdf
+
+42) How can you create a shared application context in a JUnit test?
+	See 
+	GitHub.com/fagaiera/springprofessionalcertification/
+	Reuse spring application context across junit test classes
+
+43) What does a static @Bean method do?
+
+44) What is a ProperySourcesPlaceholderConfigurer used for?
+
+45) What is a namespace used for in XML configuration
+
+46) If you saw one of the <context/> elements covered in the course, would you know what it does?
+
+47) What is @Value used for?
+
+48) What is the difference between $ and # in @Value expressions?
+
+Aspect oriented programming
+
+49) What is the concept of AOP? Which problem does it solve?
+50) What is a pointcut, a join point, an advice, an aspect, weaving?
+51) How does Spring solve (implement) a cross cutting concern?
+52) Which are the limitations of the two proxy-types?
+53) How many advice types does Spring support. What are they used for?
+54) What do you have to do to enable the detection of the @Aspect annotation?
+55) Name three typical cross cutting concerns.
+56) What two problems arise if you don't solve a cross cutting concern via AOP?
+57) What does @EnableAspectJAutoProxy do?
+58) What is a named pointcut?
+59) How do you externalize pointcuts? What is the advantage of doing this?
+60) What is the JoinPoint argument used for?
+61) What is a ProceedingJoinPoint?
+62) What are the five advice types called?
+63) Which advice do you have to use if you would like to try and catch exceptions?
+64) What is the difference between @EnableAspectJAutoProxy and <aop:aspectjautoproxy>?
+
+Data Management: JDBC, Transactions, JPA, Spring Data
+
+65) What is the difference between checked and unchecked exceptions?
+66) Why do we (in Spring) prefer unchecked exceptions?
+67) What is the data access exception hierarchy?
+68) How do you configure a DataSource in Spring? Which bean is very useful for development/test databases?
+69) What is the Template design pattern and what is the JDBC template?
+70) What is a callback? What are the three JdbcTemplate callback interfaces described in the notes? What are they used for? (You would not have to remember the interface names in the exam, but you should know what they do if you see them in a code sample).
+71) Can you execute a plain SQL statement with the JDBC template?
+72) Does the JDBC template acquire (and release) a connection for every method called or once per template?
+73) Is the JDBC template able to participate in an existing transaction?
+74) What is a transaction? What is the difference between a local and a global transaction?
+75) Is a transaction a cross cutting concern? How is it implemented in Spring?
+76) How are you going to set up a transaction in Spring?
+77) What does @Transactional do? What is the PlatformTransactionManager?
+78) What is the TransactionTemplate? Why would you use it?
+79) What is a transaction isolation level? How many do we have and how are they ordered?
+80) What is the difference between @EnableTransactionManagement and <tx:annotation-driven>?
+81) How does the JdbcTemplate support generic queries? How does it return objects and lists/maps of objects?
+82) What does transaction propagation mean?
+83) What happens if one @Transactional annotated method is calling another @Transactional annotated method on the same object instance?
+84) Where can the @Transactional annotation be used? What is a typical usage if you put it at class level?
+85) What does declarative transaction management mean?
+86) What is the default rollback policy? How can you override it?
+87) What is the default rollback policy in a JUnit test, when you use the SpringJUnit4ClassRunner and annotate your @Test annotated method with @Transactional?
+88) Why is the term "unit of work" so important and why does JDBC AutoCommit violate this pattern?
+89) What does JPA mean - what is ORM? What is the idea behind an ORM?
+90) What is a PersistenceContext and what is an EntityManager. What is the relationship between both?
+91) Why do you need the @Entity annotation. Where can it be placed?
+92) What do you need to do in Spring if you would like to work with JPA?
+93) Are you able to participate in a given transaction in Spring while working with JPA?
+94) What is the PlatformTransactionManager?
+95) What does @PersistenceContext do?
+96) What are disadvantages or ORM? What are the benefits?
+97) What is an "instant repository"? (hint: recall Spring Data)
+98) How do you define an “instant” repository?
+99) What is @Query used for?
+
+Spring MVC and the Web Layer
+
+100) MVC is an abbreviation for a design pattern. What does it stand for and what is the idea behind it?
+101) Do you need spring-mvc.jar in your classpath or is it part of spring-core?
+102) What is the DispatcherServlet and what is it used for?
+103) Is the DispatcherServlet instantiated via an application context?
+104) What is the root application context? How is it loaded?
+105) What is the @Controller annotation used for? How can you create a controller without an annotation?
+106) What is the ContextLoaderListener and what does it do?
+107) What are you going to do in the web.xml. Where do you place it?
+108) How is an incoming request mapped to a controller and mapped to a method?
+109) What is the @RequestParam used for?
+110) What are the differences between @RequestParam and @PathVariable?
+111) What are some of the valid return types of a controller method?
+112) What is a View and what's the idea behind supporting different types of View?
+113) How is the right View chosen when it comes to the rendering phase?
+114) What is the Model?
+115) Why do you have access to the model in your View? Where does it come from?
+116) What is the purpose of the session scope?
+117) What is the default scope in the web context?
+118) Why are controllers testable artifacts?
+119) What does the InternalResourceViewResolver do?
+
+Security
+
+120) What is the delegating filter proxy?
+121) What is the security filter chain?
+122) In the notes several predefined filters were shown. Do you recall what they did and what order they occurred in?
+123) Are you able to add and/or replace individual filters?
+124) Is it enough to hide sections of my output (e.g. JSP-Page)?
+125) Why do you need the intercept-url?
+126) Why do you need method security? What type of object is typically secured at the method level (think of its purpose not its Java type).
+127) Is security a cross cutting concern? How is it implemented internally?
+128) What do @Secured and @RolesAllowed do? What is the difference between them?
+129) What is a security context?
+130) In which order do you have to write multiple intercept-url's?
+131) How is a Principal defined?
+132) What is authentication and authorization? Which must come first?
+133) In which security annotation are you allowed to use SpEL?
+134) Does Spring Security support password hashing? What is salting?
+
+REST
+
+135) What does REST stand for?
+136) What is a resource?
+137) What are safe REST operations?
+138) What are idempotent operations? Why is idempotency important?
+139) Is REST scalable and/or interoperable?
+140) What are the advantages of the RestTemplate?
+141) Which HTTP methods does REST use?
+142) What is an HttpMessageConverter?
+143) Is REST normally stateless?
+144) What does @RequestMapping do?
+145) Is @Controller a stereotype? Is @RestController a stereotype?
+146) What is the difference between @Controller and @RestController?
+147) When do you need @ResponseBody?
+148) What does @PathVariable do?
+149) What is the HTTP status return code for a successful DELETE statement?
+150) What does CRUD mean?
+151) Is REST secure? What can you do to secure it?
+152) Where do you need @EnableWebMVC?
+153) Name some common http response codes. When do you need @ResponseStatus?
+154) Does REST work with transport layer security (TLS)?
+155) Do you need Spring MVC in your classpath?
+
+Spring Boot
+
+156) What is Spring Boot?
+157) What are the advantages of using Spring Boot?
+158) Why is it “opinionated”?
+159) How does it work? How does it know what to configure?
+160) What things affect what Spring Boot sets up?
+161) How are properties defined? Where?
+162) Would you recognize common Spring Boot annotations and configuration properties if you saw them in the exam?
+163) What is the difference between an embedded container and a WAR?
+164) What embedded containers does Spring Boot support?
+165) What does @EnableAutoConfiguration do? What about @SpringBootApplication?
+166) What is a Spring Boot starter POM? Why is it useful?
+167) Spring Boot supports both Java properties and YML files. Would you recognize and understand them if you saw them?
+168) Can you control logging with Spring Boot? How?
+169) Note that the second Spring Boot section (Going Further) is not required for this exam.
+
+Remember: Unless a question explicitly references Spring Boot (like those in this section) you can assume Spring Boot is not involved in any question.
+
+Microservices
+
+170) What is a microservices architecture?
+171) What are the advantages and disadvantages of microservices?
+172) What sub-projects of Spring Cloud did we cover in the course? Spring Cloud is a large umbrella project – only what we covered in the course will be tested.
+173) Would you recognize the Spring Cloud annotations and configuration we used in the course if you saw it in the exam?
+174) What Netflix projects did we use?
+175) What is Service Discovery? How is this related to Eureka?
+176) How do you setup Service Discovery?
+177) How do you access a RESTful microservice?
