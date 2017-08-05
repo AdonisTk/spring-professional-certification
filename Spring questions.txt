@@ -1,13 +1,13 @@
 Container, Dependency, and IOC
 
 1) What is dependency injection and what are the advantages?
-	01 Dependency injection.pdf
+	Dependency injection Wikipedia.
 	
 2) What is an interface and what are the advantages of making use of them in Java?
-	02 Interfaces.pdf
+	What Is an Interface? (The Java TM Tutorials > Learning the Java Language > ObjectOriented Programming Concepts)
 	
 3) What is meant by “application-context” and how do you create one?
-	03 Application context.pdf
+	Application context.pdf
 	
 4) What is the concept of a “container” and what is its lifecycle?
 	04 Containers and its lifecycle.pdf
@@ -69,15 +69,19 @@ Container, Dependency, and IOC
 	26 Java-based container configuration.pdf
 
 27) How are you going to create an ApplicationContext in an integration test or a JUnit test?
-	https://github.com/fagaiera/springprofessionalcertification/tree/master/027%20JUnit%20Spring
+	See
+	GitHub.com/fagaiera/springprofessionalcertification/
 
 28) What do you have to do, if you would like to inject something into a private field?
+	See
+	GitHub.com/fagaiera/springprofessionalcertification/
 
 29) What are the advantages of JavaConfig? What are the limitations?
 	JavaConfig <-> Java-based container configuration
 	
 30) What is the default bean id if you only use "@Bean"?
-	
+	See
+	GitHub.com/fagaiera/springprofessionalcertification/
 
 31) Can you use @Bean together with @Profile?
 	31 Profile Annotation.pdf
@@ -86,19 +90,26 @@ Container, Dependency, and IOC
 	32 SpEL.pdf
 
 33) What is the environment abstraction in Spring?
-	33 Environment abstraction.pdf
-
-34) What can you reference using SpEL?
-	http://www.baeldung.com/spring-expression-language
+	See
+	Page 135 spring-framework-reference.pdf
+	
+34) What can you reference using SpEL?	
+	See
+	Baeldung expression language
 	GitHub.com/fagaiera/springprofessionalcertification/
+	Page 188 spring-framework-reference.pdf
 
 35) How do you configure a profile. What are possible use cases where they might be useful?
-	35 Profiles.pdf
-
 36) How many profiles can you have?
+	See
+	GitHub.com/fagaiera/springprofessionalcertification/
+	Page 135 spring-framework-reference.pdf
+
 
 37) How do you enable JSR-250 annotations like @PostConstruct?
-	Page 104 to 105 spring-framework-reference.pdf
+	See
+	GitHub.com/fagaiera/springprofessionalcertification/
+	Page 104 spring-framework-reference.pdf
 
 38) Why are you not allowed to annotate a final class with @Configuration
 	Page 112 spring-framework-reference.pdf
@@ -113,22 +124,39 @@ Container, Dependency, and IOC
 42) How can you create a shared application context in a JUnit test?
 	See 
 	GitHub.com/fagaiera/springprofessionalcertification/
-	Reuse spring application context across junit test classes
+	Reuse spring application context across junit test classes stackoverflow.com
 
 43) What does a static @Bean method do?
+	See
 	Page 112 spring-framework-reference.pdf
 	43 Annotation Type Bean.pdf
 
-44) What is a ProperySourcesPlaceholderConfigurer used for?
+44) What is a PropertySourcesPlaceholderConfigurer used for?
+	See
+	GitHub.com/fagaiera/springprofessionalcertification/
 
 45) What is a namespace used for in XML configuration
 
 46) If you saw one of the <context/> elements covered in the course, would you know what it does?
+	See
+	Page 839 spring-framework-reference.pdf
+	<context:annotation-config>
+	<context:component-scan base-package="io.berkel">
+	<context:load-time-weaver>
+	<context:mbean-export default-domain="domain">
+	<context:mbean-server id="beanServer">
+	<context:property-override ignore-unresolvable="false">
+	<context:property-placeholder location="classpath:foo.properties" />
+	<context:spring-configured>
 
 47) What is @Value used for?
+	See
 	Page 195 spring-framework-reference.pdf
 
 48) What is the difference between $ and # in @Value expressions?
+	See
+	${...} is the property placeholder syntax. It can only be used to dereference properties.
+	#{...} is SpEL syntax, which is far more capable and complex. It can also handle property placeholders, and a lot more besides.
 
 Aspect oriented programming
 
