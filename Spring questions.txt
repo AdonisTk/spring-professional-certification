@@ -119,8 +119,9 @@ Container, Dependency, and IOC
 40) Why are you not allowed to annotate final methods with @Bean?
 
 41) What is the preferred way to close an application context?
-	41 Close Application Context.pdf
-
+	See
+	Interface ConfigurableApplicationContext.pdf
+	
 42) How can you create a shared application context in a JUnit test?
 	See 
 	GitHub.com/fagaiera/springprofessionalcertification/
@@ -136,6 +137,9 @@ Container, Dependency, and IOC
 	GitHub.com/fagaiera/springprofessionalcertification/
 
 45) What is a namespace used for in XML configuration
+	See
+	An XML namespace is just a token that, for lack of a better description, identifies whose "version" a particular tag or attribute is. The idea is to prevent conflicts if, for instance, you're using XML with elements defined by multiple people/programs/standards bodies/etc.
+	Page 827 spring-framework-reference.pdf
 
 46) If you saw one of the <context/> elements covered in the course, would you know what it does?
 	See
