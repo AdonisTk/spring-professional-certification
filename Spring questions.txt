@@ -115,6 +115,11 @@ Container, Dependency, and IOC
 	Page 112 spring-framework-reference.pdf
 
 39)Why must you have a default constructor in your @Configuration annotated class?
+	See
+    @Configuration classes must have a default/no-arg constructor and may not use @Autowired constructor parameters. Any nested configuration classes must be static
+	The reason is that spring uses CGLIB to proxy @Configuration classes and there is limitation in Spring, that classes proxied with CGLIB prior to version 4 are required to have default no-args constructor.
+    Prior to Spring 4, CGLIB-based proxy classes require a default constructor. And this is not the limitation of CGLIB library, but Spring itself. Fortunately, as of Spring 4 this is no longer an issue. CGLIB-based proxy classes no longer require a default constructor.
+
 
 40) Why are you not allowed to annotate final methods with @Bean?
 
