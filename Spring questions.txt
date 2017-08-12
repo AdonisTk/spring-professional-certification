@@ -44,13 +44,16 @@ Container, Dependency, and IOC
 
 12) What is a BeanFactoryPostProcessor and what is it used for?
 13) What is a BeanPostProcessor and how is the difference to a BeanFactoryPostProcessor? What do they do? When are they called?
-	12 13 Container Extension Points.pdf
-
+	See
+	7.8 Container Extension Points spring-framework-reference.pdf
+	
 14) Are beans lazily or eagerly instantiated by default? How do you alter this behavior?
-	14 Lazy-initialized beans.pdf
+	
+	Lazy-initialized beans.pdf
 
 15) What does component-scanning do?
-	15 Naming beans.pdf
+	See
+	Naming beans spring-framework-reference.pdf
 	
 16) What is the behavior of the annotation @Autowired with regards to field injection, constructor injection and method injection?
 17) How does the @Qualifier annotation complement the use of @Autowired?
