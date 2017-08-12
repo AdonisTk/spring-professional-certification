@@ -1,35 +1,46 @@
 Container, Dependency, and IOC
 
 1) What is dependency injection and what are the advantages?
+	See
 	Dependency injection Wikipedia.
 	
 2) What is an interface and what are the advantages of making use of them in Java?
+	See
 	What Is an Interface? (The Java TM Tutorials > Learning the Java Language > ObjectOriented Programming Concepts)
 	
 3) What is meant by “application-context” and how do you create one?
+	See
 	Application context.pdf
 	
 4) What is the concept of a “container” and what is its lifecycle?
-	04 Containers and its lifecycle.pdf
+	See
+	Containers and its lifecycle.pdf
 	
 5) Dependency injection using Java configuration
-	05 Java-based container configuration.pdf
-
+	See
+	7.12 Java-based container configuration spring-framework-reference.pdf
+	
 6) Dependency injection in XML, using constructor or setter injection
-	06 Constructor or Setter Injection.pdf
-
+	See 
+	7.4 Dependencies spring-framework-reference.pdf
+	
 7) Dependency injection using annotations (@Component, @Autowired)
-	07 Dependency injection using annotations.pdf
+	See
+	7.9 Annotation-based container configuration spring-framework-reference.pdf
 	
 8) Component scanning, Stereotypes and Meta-Annotations
-	08 Component scanning, Stereotypes and Meta-Annotations.pdf
-	
+	See
+	Annotation Type ComponentScan
+	7.10 Classpath scanning and managed components spring-framework-reference.pdf
+		
 9) Scopes for Spring beans. What is the default?
-	09 Bean scopes.pdf
+	See 
+	7.5 Bean scopes spring-framework-reference.pdf
 	
 10) What is an initialization method and how is it declared in a Spring bean?
 11) What is a destroy method, how is it declared and when is it called?
-	10 11 Customizing the nature of a bean.pdf
+	See 
+	7.6 Customizing the nature of a bean spring-framework-reference.pdf
 
 12) What is a BeanFactoryPostProcessor and what is it used for?
 13) What is a BeanPostProcessor and how is the difference to a BeanFactoryPostProcessor? What do they do? When are they called?
