@@ -1,0 +1,1 @@
+# 16) What is the behavior of the annotation @Autowired with regards to field injection, constructor injection and method injection?
