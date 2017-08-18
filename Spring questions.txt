@@ -48,7 +48,7 @@ Container, Dependency, and IOC
 	7.8 Container Extension Points spring-framework-reference.pdf
 	
 14) Are beans lazily or eagerly instantiated by default? How do you alter this behavior?
-	
+	See
 	Lazy-initialized beans.pdf
 
 15) What does component-scanning do?
@@ -57,27 +57,33 @@ Container, Dependency, and IOC
 	
 16) What is the behavior of the annotation @Autowired with regards to field injection, constructor injection and method injection?
 17) How does the @Qualifier annotation complement the use of @Autowired?
+	See
 	Autowired concretepage.pdf
 
 18) What is the role of the @PostConstruct and @PreDestroy annotations? When will they get called?
-	18 PostConstruct and PreDestroy.pdf
+	See
+	@PostConstruct and @PreDestroy page 105 spring-framework-reference.pdf
 
 19) What is a proxy object and what are the two different types of proxies Spring can create?
 20) What is the power of a proxy object and where are the disadvantages?
 21) What are the limitations of these proxies (per type)?
-	https://spring.io/blog/2012/05/23/transactions-caching-and-aop-understanding-proxy-usage-in-spring
-	JDK- and CGLIB-based proxies
-	19 Proxy pattern.pdf
-
+	See
+	Proxy pattern Wikipedia
+	JDK- and CGLIB-based proxies page 271 spring-framework-reference.pdf
+	
 22) How do you inject scalar/literal values into Spring beans?
-	22  XML Schema-based configuration.pdf
+	See
+	41. XML Schema-based configuration page page 827 spring-framework-reference.pdf
+	
 
 23) How are you going to create a new instance of an ApplicationContext?
 24) What is a prefix?	
-	8.7 Application contexts and Resource paths
+	See
+	8.7 Application contexts and Resource paths page 159 spring-framework-reference.pdf
 
 25) What is the lifecycle on an ApplicationContext?
-	25 Spring Bean Life Cycle.pdf
+	See
+	Spring Bean Life Cycle Tutorial HowToDoInJava
 
 26) What does the @Bean annotation do?
 	26 Java-based container configuration.pdf
