@@ -57,7 +57,7 @@ Container, Dependency, and IOC
 	
 16) What is the behavior of the annotation @Autowired with regards to field injection, constructor injection and method injection?
 17) How does the @Qualifier annotation complement the use of @Autowired?
-	16 17 Autowired with Setter Method, Field and Constructor.pdf
+	Autowired concretepage.pdf
 
 18) What is the role of the @PostConstruct and @PreDestroy annotations? When will they get called?
 	18 PostConstruct and PreDestroy.pdf
