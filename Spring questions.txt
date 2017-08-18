@@ -101,17 +101,19 @@ Container, Dependency, and IOC
 	See
 	Consider Replacing Spring XML Configuration with JavaConfig DZone
 	Spring Dependency Injection Styles - Why I love Java based configuration - codecentric AG Blog : codecentric AG Blog
-	JavaConfig advantages over XML
+	JavaConfig advantages over XML.pdf
 	
 30) What is the default bean id if you only use "@Bean"?
 	See
 	GitHub.com/fagaiera/springprofessionalcertification/
 
 31) Can you use @Bean together with @Profile?
-	31 Profile Annotation.pdf
+	See
+	Profile Annotation.pdf
 
 32) What is Spring Expression Language (SpEL for short)?
-	32 SpEL.pdf
+	See
+	10. Spring Expression Language (SpEL) page 188 spring-framework-reference.pdf
 
 33) What is the environment abstraction in Spring?
 	See
@@ -136,16 +138,15 @@ Container, Dependency, and IOC
 	Page 104 spring-framework-reference.pdf
 
 38) Why are you not allowed to annotate a final class with @Configuration
+	See
 	Page 112 spring-framework-reference.pdf
 
 39)Why must you have a default constructor in your @Configuration annotated class?
 	See
-    @Configuration classes must have a default/no-arg constructor and may not use @Autowired constructor parameters. Any nested configuration classes must be static
-	The reason is that spring uses CGLIB to proxy @Configuration classes and there is limitation in Spring, that classes proxied with CGLIB prior to version 4 are required to have default no-args constructor.
-    Prior to Spring 4, CGLIB-based proxy classes require a default constructor. And this is not the limitation of CGLIB library, but Spring itself. Fortunately, as of Spring 4 this is no longer an issue. CGLIB-based proxy classes no longer require a default constructor.
-
+	Default constructor.pdf
 
 40) Why are you not allowed to annotate final methods with @Bean?
+	
 
 41) What is the preferred way to close an application context?
 	See
