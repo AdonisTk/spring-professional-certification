@@ -86,8 +86,9 @@ Container, Dependency, and IOC
 	Spring Bean Life Cycle Tutorial HowToDoInJava
 
 26) What does the @Bean annotation do?
-	26 Java-based container configuration.pdf
-
+	See 
+	7.12 Java-based container configuration page 118 spring-framework-reference.pdf
+	
 27) How are you going to create an ApplicationContext in an integration test or a JUnit test?
 	See
 	GitHub.com/fagaiera/springprofessionalcertification/
@@ -97,7 +98,10 @@ Container, Dependency, and IOC
 	GitHub.com/fagaiera/springprofessionalcertification/
 
 29) What are the advantages of JavaConfig? What are the limitations?
-	JavaConfig <-> Java-based container configuration
+	See
+	Consider Replacing Spring XML Configuration with JavaConfig DZone
+	Spring Dependency Injection Styles - Why I love Java based configuration - codecentric AG Blog : codecentric AG Blog
+	JavaConfig advantages over XML
 	
 30) What is the default bean id if you only use "@Bean"?
 	See
