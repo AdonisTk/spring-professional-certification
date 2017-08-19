@@ -2,7 +2,7 @@ Container, Dependency, and IOC
 
 1) What is dependency injection and what are the advantages?
 	See
-	Dependency injection Wikipedia.
+	Dependency injection Wikipedia
 	
 2) What is an interface and what are the advantages of making use of them in Java?
 	See
@@ -62,24 +62,24 @@ Container, Dependency, and IOC
 
 18) What is the role of the @PostConstruct and @PreDestroy annotations? When will they get called?
 	See
-	@PostConstruct and @PreDestroy page 105 spring-framework-reference.pdf
+	@PostConstruct and @PreDestroy spring-framework-reference.pdf
 
 19) What is a proxy object and what are the two different types of proxies Spring can create?
 20) What is the power of a proxy object and where are the disadvantages?
 21) What are the limitations of these proxies (per type)?
 	See
 	Proxy pattern Wikipedia
-	JDK- and CGLIB-based proxies page 271 spring-framework-reference.pdf
+	JDK- and CGLIB-based proxies spring-framework-reference.pdf
 	
 22) How do you inject scalar/literal values into Spring beans?
 	See
-	41. XML Schema-based configuration page page 827 spring-framework-reference.pdf
+	41. XML Schema-based configuration spring-framework-reference.pdf
 	
 
 23) How are you going to create a new instance of an ApplicationContext?
 24) What is a prefix?	
 	See
-	8.7 Application contexts and Resource paths page 159 spring-framework-reference.pdf
+	8.7 Application contexts and Resource paths spring-framework-reference.pdf
 
 25) What is the lifecycle on an ApplicationContext?
 	See
@@ -87,7 +87,7 @@ Container, Dependency, and IOC
 
 26) What does the @Bean annotation do?
 	See 
-	7.12 Java-based container configuration page 118 spring-framework-reference.pdf
+	7.12 Java-based container configuration spring-framework-reference.pdf
 	
 27) How are you going to create an ApplicationContext in an integration test or a JUnit test?
 	See
@@ -113,23 +113,23 @@ Container, Dependency, and IOC
 
 32) What is Spring Expression Language (SpEL for short)?
 	See
-	10. Spring Expression Language (SpEL) page 188 spring-framework-reference.pdf
+	10. Spring Expression Language (SpEL) spring-framework-reference.pdf
 
 33) What is the environment abstraction in Spring?
 	See
-	Page 135 spring-framework-reference.pdf
+	7.13 Environment abstraction spring-framework-reference.pdf
 	
 34) What can you reference using SpEL?	
 	See
 	Baeldung expression language
 	GitHub.com/fagaiera/springprofessionalcertification/
-	Page 188 spring-framework-reference.pdf
+	10. Spring Expression Language (SpEL) spring-framework-reference.pdf
 
 35) How do you configure a profile. What are possible use cases where they might be useful?
 36) How many profiles can you have?
 	See
 	GitHub.com/fagaiera/springprofessionalcertification/
-	Page 135 spring-framework-reference.pdf
+	7.13 Environment abstraction spring-framework-reference.pdf
 
 
 37) How do you enable JSR-250 annotations like @PostConstruct?
@@ -146,8 +146,9 @@ Container, Dependency, and IOC
 	Default constructor.pdf
 
 40) Why are you not allowed to annotate final methods with @Bean?
+	See
+	Final methods with annotation Bean.pdf
 	
-
 41) What is the preferred way to close an application context?
 	See
 	Interface ConfigurableApplicationContext.pdf
@@ -160,37 +161,28 @@ Container, Dependency, and IOC
 43) What does a static @Bean method do?
 	See
 	Page 112 spring-framework-reference.pdf
-	43 Annotation Type Bean.pdf
+	Annotation Type Bean.pdf
 
 44) What is a PropertySourcesPlaceholderConfigurer used for?
 	See
 	GitHub.com/fagaiera/springprofessionalcertification/
 
-45) What is a namespace used for in XML configuration
+45) What is a namespace used for in XML configuration?
 	See
-	An XML namespace is just a token that, for lack of a better description, identifies whose "version" a particular tag or attribute is. The idea is to prevent conflicts if, for instance, you're using XML with elements defined by multiple people/programs/standards bodies/etc.
-	Page 827 spring-framework-reference.pdf
+	41. XML Schema-based configuration spring-framework-reference.pdf
+	Namespace.pdf
 
 46) If you saw one of the <context/> elements covered in the course, would you know what it does?
 	See
 	Page 839 spring-framework-reference.pdf
-	<context:annotation-config>
-	<context:component-scan base-package="io.berkel">
-	<context:load-time-weaver>
-	<context:mbean-export default-domain="domain">
-	<context:mbean-server id="beanServer">
-	<context:property-override ignore-unresolvable="false">
-	<context:property-placeholder location="classpath:foo.properties" />
-	<context:spring-configured>
 
 47) What is @Value used for?
 	See
 	Page 195 spring-framework-reference.pdf
 
 48) What is the difference between $ and # in @Value expressions?
-	See
-	${...} is the property placeholder syntax. It can only be used to dereference properties.
-	#{...} is SpEL syntax, which is far more capable and complex. It can also handle property placeholders, and a lot more besides.
+	See 
+	Value expressions.pdf
 
 Aspect oriented programming
 
