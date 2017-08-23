@@ -187,8 +187,17 @@ Container, Dependency, and IOC
 Aspect oriented programming
 
 49) What is the concept of AOP? Which problem does it solve?
+	See
+	Aspect Oriented Programming Wikipedia
+	11. Aspect Oriented Programming with Spring spring-framework-reference.pdf
+	
 50) What is a pointcut, a join point, an advice, an aspect, weaving?
+	See
+	AOP concepts spring-framework-reference.pdf
+
 51) How does Spring solve (implement) a cross cutting concern?
+
+
 52) Which are the limitations of the two proxy-types?
 53) How many advice types does Spring support. What are they used for?
 54) What do you have to do to enable the detection of the @Aspect annotation?

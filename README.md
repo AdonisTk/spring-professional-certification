@@ -4,13 +4,13 @@
 ## DI Basics
 - Reduces coupling between classes
 - Classes do not obtain their dependencies (collaborators), Spring container provides proper dependency based on configuration provided
-- Enables easy switching of dependencies based en current needs - local development vs production environment, 
+- Enables easy switching of dependencies based on current needs: Local development vs production environment, 
 easy mocking for unit tests, in memory database vs production one, etc.
 - Promotes programming to interfaces
 - Spring-managed objects are called "beans"
 - Beans are written as POJOs, no need to inherit Spring base classes or implement spring interfaces
 - Classes can be completely independent of Spring framework (although for convenience Spring annotations are often used)
-- Lifecycle of beans is managed centrally by Spring container (eg. enforces singleton state of bean/ one instance pers session. one instance per HTTP request/...)
+- Lifecycle of beans is managed centrally by Spring container (eg. enforces singleton state of bean/ one instance per session. one instance per HTTP request/...)
 - Spring configuration (including DI) is possible either via XML or Java configuration files (newer, more popular approach)
 
 ## Spring Application Context
@@ -137,7 +137,7 @@ public class ApplicationConfiguration {
     - By setting "spring.profiles.active" system property
     - Active profiles are comma-separated
 - Profiles can be used to load different property files under different profiles
-```
+```java
 @Configuration
 @Profile("local")
 @PropertySource("classpath:/com/example/myapp/config/application-local.properties")
