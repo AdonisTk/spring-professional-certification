@@ -1,7 +1,7 @@
-package io.berkel.aop.config;
+package io.berkel.aop.annotation.config;
 
-import io.berkel.aop.aspect.UserAspect;
-import io.berkel.aop.service.UserService;
+import io.berkel.aop.annotation.aspect.UserAspect;
+import io.berkel.aop.annotation.service.UserService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;

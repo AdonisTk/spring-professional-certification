@@ -1,4 +1,4 @@
-package io.berkel.aop.service;
+package io.berkel.aop.xml.service;
 
 public class UserService {
 
