@@ -196,12 +196,24 @@ Aspect oriented programming
 	AOP concepts spring-framework-reference.pdf
 
 51) How does Spring solve (implement) a cross cutting concern?
-
+	See
+	GitHub.com/fagaiera/springprofessionalcertification/
 
 52) Which are the limitations of the two proxy-types?
+	See
+	Limitations of the two proxy-types.pdf
+
 53) How many advice types does Spring support. What are they used for?
+	See
+	Declaring Advice spring-framework-reference.pdf
+
 54) What do you have to do to enable the detection of the @Aspect annotation?
+	See
+	Annotation EnableAspectJAutoProxy.pdf
+
 55) Name three typical cross cutting concerns.
+
+
 56) What two problems arise if you don't solve a cross cutting concern via AOP?
 57) What does @EnableAspectJAutoProxy do?
 58) What is a named pointcut?
