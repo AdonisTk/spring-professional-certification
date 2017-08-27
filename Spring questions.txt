@@ -212,7 +212,8 @@ Aspect oriented programming
 	Annotation EnableAspectJAutoProxy.pdf
 
 55) Name three typical cross cutting concerns.
-
+	See
+	Cross cutting concerns.pdf
 
 56) What two problems arise if you don't solve a cross cutting concern via AOP?
 57) What does @EnableAspectJAutoProxy do?
