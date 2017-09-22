@@ -216,8 +216,16 @@ Aspect oriented programming
 	Cross cutting concerns.pdf
 
 56) What two problems arise if you don't solve a cross cutting concern via AOP?
+	See
+	Problems arised when AOP is not used.pdf
+
 57) What does @EnableAspectJAutoProxy do?
+	See
+	Annotation EnableAspectJAutoProxy.pdf
+	
 58) What is a named pointcut?
+	Declaring a pointcut spring-framework-reference.pdf
+	
 59) How do you externalize pointcuts? What is the advantage of doing this?
 60) What is the JoinPoint argument used for?
 61) What is a ProceedingJoinPoint?
