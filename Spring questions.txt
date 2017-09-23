@@ -227,6 +227,10 @@ Aspect oriented programming
 	Declaring a pointcut spring-framework-reference.pdf
 	
 59) How do you externalize pointcuts? What is the advantage of doing this?
+	See
+	Externalize pointcuts.pdf
+	GitHub.com/fagaiera/springprofessionalcertification/
+	
 60) What is the JoinPoint argument used for?
 61) What is a ProceedingJoinPoint?
 62) What are the five advice types called?
