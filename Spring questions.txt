@@ -237,10 +237,15 @@ Aspect oriented programming
 
 61) What is a ProceedingJoinPoint?
 	See
+	ProceedingJoinPoint.pdf
 	GitHub.com/fagaiera/springprofessionalcertification/
 	
 62) What are the five advice types called?
+	See
+	Advice types.pdf
+	
 63) Which advice do you have to use if you would like to try and catch exceptions?
+
 64) What is the difference between @EnableAspectJAutoProxy and <aop:aspectjautoproxy>?
 
 Data Management: JDBC, Transactions, JPA, Spring Data
