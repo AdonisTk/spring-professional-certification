@@ -245,8 +245,12 @@ Aspect oriented programming
 	Advice types.pdf
 	
 63) Which advice do you have to use if you would like to try and catch exceptions?
-
+	See
+	GitHub.com/fagaiera/springprofessionalcertification/
+	
 64) What is the difference between @EnableAspectJAutoProxy and <aop:aspectjautoproxy>?
+	See
+	AutoProxy.pdf
 
 Data Management: JDBC, Transactions, JPA, Spring Data
 
