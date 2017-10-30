@@ -252,9 +252,12 @@ Aspect oriented programming
 	See
 	AutoProxy.pdf
 
-Data Management: JDBC, Transactions, JPA, Spring Data
+	Data Management: JDBC, Transactions, JPA, Spring Data
 
 65) What is the difference between checked and unchecked exceptions?
+	See 
+	Unchecked exceptions.pdf
+	
 66) Why do we (in Spring) prefer unchecked exceptions?
 67) What is the data access exception hierarchy?
 68) How do you configure a DataSource in Spring? Which bean is very useful for development/test databases?
