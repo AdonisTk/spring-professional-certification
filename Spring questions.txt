@@ -259,7 +259,13 @@ Aspect oriented programming
 	Unchecked exceptions.pdf
 	
 66) Why do we (in Spring) prefer unchecked exceptions?
+	See
+	Spring unchecked exceptions.pdf
+	
 67) What is the data access exception hierarchy?
+	See
+	18.2 Consistent exception hierarchy spring-framework-reference.pdf
+	
 68) How do you configure a DataSource in Spring? Which bean is very useful for development/test databases?
 69) What is the Template design pattern and what is the JDBC template?
 70) What is a callback? What are the three JdbcTemplate callback interfaces described in the notes? What are they used for? (You would not have to remember the interface names in the exam, but you should know what they do if you see them in a code sample).
