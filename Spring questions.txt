@@ -267,7 +267,14 @@ Aspect oriented programming
 	18.2 Consistent exception hierarchy spring-framework-reference.pdf
 	
 68) How do you configure a DataSource in Spring? Which bean is very useful for development/test databases?
+	See
+	19.3 Controlling database connections spring-framework-reference.pdf
+
 69) What is the Template design pattern and what is the JDBC template?
+	See
+	19.2 Using the JDBC core classes to control basic JDBC processing and error handling spring-framework-reference.pdf
+	Template method GoF.pdf
+
 70) What is a callback? What are the three JdbcTemplate callback interfaces described in the notes? What are they used for? (You would not have to remember the interface names in the exam, but you should know what they do if you see them in a code sample).
 71) Can you execute a plain SQL statement with the JDBC template?
 72) Does the JDBC template acquire (and release) a connection for every method called or once per template?
