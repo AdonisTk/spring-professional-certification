@@ -13,10 +13,12 @@ public class UserService {
     private JdbcTemplate jdbcTemplate;
 
     public void someUserService() {
-            jdbcTemplate.query("select first_name from customer", new RowCallbackHandler() {
+            jdbcTemplate.query("SELECT Name FROM city ORDER BY ID", new RowCallbackHandler() {
                 @Override
                 public void processRow(ResultSet resultSet) throws SQLException {
-
+                    while (resultSet.next()) {
+                        System.out.println(resultSet.getString(1));
+                    }
                 }
             });
     }
