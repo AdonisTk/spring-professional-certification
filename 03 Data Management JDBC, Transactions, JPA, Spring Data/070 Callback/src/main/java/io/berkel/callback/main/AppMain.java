@@ -11,7 +11,8 @@ public class AppMain {
 
         ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         UserService userService = context.getBean(UserService.class);
-        userService.someUserService();
+        userService.performRowCallbackHandler();
+        userService.performPreparedStatementCreator();
         context.close();
 
     }
