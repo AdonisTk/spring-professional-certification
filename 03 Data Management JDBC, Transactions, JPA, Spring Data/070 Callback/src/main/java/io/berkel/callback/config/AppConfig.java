@@ -12,7 +12,7 @@ import javax.sql.DataSource;
 public class AppConfig {
 
     @Bean
-    public DataSource dataSource(){
+    public DataSource dataSourceWorldDB(){
 
         DriverManagerDataSource ds = new DriverManagerDataSource();
         ds.setDriverClassName("com.mysql.jdbc.Driver");
@@ -24,8 +24,25 @@ public class AppConfig {
     }
 
     @Bean
-    public JdbcTemplate jdbcTemplate() {
-        return new JdbcTemplate(dataSource());
+    public DataSource dataSourceSakilaDB() {
+
+        DriverManagerDataSource ds = new DriverManagerDataSource();
+        ds.setDriverClassName("com.mysql.jdbc.Driver");
+        ds.setUrl("jdbc:mysql://localhost:3306/sakila?useSSL=false");
+        ds.setUsername("root");
+        ds.setPassword("root");
+        return ds;
+
+    }
+
+    @Bean
+    public JdbcTemplate jdbcTemplateWorldDb() {
+        return new JdbcTemplate(dataSourceWorldDB());
+    }
+
+    @Bean
+    public JdbcTemplate jdbcTemplateSakilaDb() {
+        return new JdbcTemplate(dataSourceSakilaDB());
     }
 
     @Bean

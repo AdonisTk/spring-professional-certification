@@ -13,6 +13,7 @@ public class AppMain {
         UserService userService = context.getBean(UserService.class);
         userService.performRowCallbackHandler();
         userService.performPreparedStatementCreator();
+        userService.performCallableStatementCreator();
         context.close();
 
     }

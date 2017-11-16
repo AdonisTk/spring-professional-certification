@@ -1,22 +1,23 @@
 package io.berkel.callback.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.PreparedStatementCreator;
-import org.springframework.jdbc.core.RowCallbackHandler;
+import org.springframework.jdbc.core.*;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class UserService {
 
     @Autowired
-    private JdbcTemplate jdbcTemplate;
+    private JdbcTemplate jdbcTemplateWorldDb;
+
+    @Autowired
+    private JdbcTemplate jdbcTemplateSakilaDb;
 
     public void performRowCallbackHandler() {
-            jdbcTemplate.query("SELECT Name FROM city ORDER BY ID", new RowCallbackHandler() {
+        jdbcTemplateWorldDb.query("SELECT Name FROM city ORDER BY ID", new RowCallbackHandler() {
                 @Override
                 public void processRow(ResultSet resultSet) throws SQLException {
                     while (resultSet.next()) {
@@ -27,7 +28,7 @@ public class UserService {
     }
 
     public  void performPreparedStatementCreator() {
-        jdbcTemplate.update(new PreparedStatementCreator() {
+        jdbcTemplateWorldDb.update(new PreparedStatementCreator() {
             @Override
             public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
                 PreparedStatement ps = connection.prepareStatement("INSERT INTO city (Name, CountryCode, District, Population) VALUES (?, ?, ?, ?)");
@@ -38,6 +39,35 @@ public class UserService {
                 return ps;
             }
         });
+    }
+
+    @SuppressWarnings("unchecked")
+    public void performCallableStatementCreator() {
+
+        SqlParameter filmId = new SqlParameter(Types.INTEGER);
+        SqlParameter storeId = new SqlParameter(Types.INTEGER);
+        SqlOutParameter outParameter = new SqlOutParameter("msg", Types.INTEGER);
+
+        List paramList = new ArrayList();
+        paramList.add(filmId );
+        paramList.add(storeId );
+        paramList.add(outParameter);
+
+        final String procedureCall = "{call film_in_stock(?, ?, ?)}";
+
+        Map<String, Object> resultMap = jdbcTemplateSakilaDb.call(new CallableStatementCreator() {
+            @Override
+            public CallableStatement createCallableStatement(Connection connection) throws SQLException {
+
+                CallableStatement callableStatement = connection.prepareCall(procedureCall);
+                callableStatement.setInt(1, 1);
+                callableStatement.setInt(2, 1);
+                callableStatement.registerOutParameter(3, Types.INTEGER);
+                return callableStatement;
+
+            }
+        },paramList);
+        System.out.println(resultMap.get("msg"));
     }
 
 }
