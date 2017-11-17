@@ -283,6 +283,8 @@ Aspect oriented programming
 	19.2 Using the JDBC core classes to control basic JDBC processing and error handling spring-framework-reference.pdf
 
 71) Can you execute a plain SQL statement with the JDBC template?
+
+
 72) Does the JDBC template acquire (and release) a connection for every method called or once per template?
 73) Is the JDBC template able to participate in an existing transaction?
 74) What is a transaction? What is the difference between a local and a global transaction?
