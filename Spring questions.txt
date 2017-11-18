@@ -292,7 +292,12 @@ Aspect oriented programming
 	JdbcTemplate Connection.pdf
 
 73) Is the JDBC template able to participate in an existing transaction?
+	See
+	JdbcTemplate transactions.pdf
+
 74) What is a transaction? What is the difference between a local and a global transaction?
+
+
 75) Is a transaction a cross cutting concern? How is it implemented in Spring?
 76) How are you going to set up a transaction in Spring?
 77) What does @Transactional do? What is the PlatformTransactionManager?
