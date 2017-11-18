@@ -296,9 +296,14 @@ Aspect oriented programming
 	JdbcTemplate transactions.pdf
 
 74) What is a transaction? What is the difference between a local and a global transaction?
+	See
+	Database transaction.pdf
+	17.2 Advantages of the Spring Framework’s transaction support model spring-framework-reference.pdf
 
+75) Is a transaction a cross cutting concern? How is it implemented in Spring? spring-framework-reference.pdf
+	See
+	17.3 Understanding the Spring Framework transaction abstraction
 
-75) Is a transaction a cross cutting concern? How is it implemented in Spring?
 76) How are you going to set up a transaction in Spring?
 77) What does @Transactional do? What is the PlatformTransactionManager?
 78) What is the TransactionTemplate? Why would you use it?
@@ -383,6 +388,9 @@ REST
 148) What does @PathVariable do?
 149) What is the HTTP status return code for a successful DELETE statement?
 150) What does CRUD mean?
+	See
+	CRUD.pdf
+	
 151) Is REST secure? What can you do to secure it?
 152) Where do you need @EnableWebMVC?
 153) Name some common http response codes. When do you need @ResponseStatus?
