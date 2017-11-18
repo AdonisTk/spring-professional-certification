@@ -300,12 +300,18 @@ Aspect oriented programming
 	Database transaction.pdf
 	17.2 Advantages of the Spring Framework’s transaction support model spring-framework-reference.pdf
 
-75) Is a transaction a cross cutting concern? How is it implemented in Spring? spring-framework-reference.pdf
+75) Is a transaction a cross cutting concern? How is it implemented in Spring? 
 	See
-	17.3 Understanding the Spring Framework transaction abstraction
+	17.3 Understanding the Spring Framework transaction abstraction spring-framework-reference.pdf
 
 76) How are you going to set up a transaction in Spring?
+	See
+	17.5. Declarative transaction management spring-framework-reference.pdf	
+	17.6. Programmatic transaction management spring-framework-reference.pdf
+	
 77) What does @Transactional do? What is the PlatformTransactionManager?
+
+
 78) What is the TransactionTemplate? Why would you use it?
 79) What is a transaction isolation level? How many do we have and how are they ordered?
 80) What is the difference between @EnableTransactionManagement and <tx:annotation-driven>?
