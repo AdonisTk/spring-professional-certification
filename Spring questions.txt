@@ -310,7 +310,8 @@ Aspect oriented programming
 	17.6. Programmatic transaction management spring-framework-reference.pdf
 	
 77) What does @Transactional do? What is the PlatformTransactionManager?
-
+	See
+	Transactional and PlatformTransactionManager.pdf
 
 78) What is the TransactionTemplate? Why would you use it?
 79) What is a transaction isolation level? How many do we have and how are they ordered?
