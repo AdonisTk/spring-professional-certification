@@ -314,26 +314,55 @@ Aspect oriented programming
 	Transactional and PlatformTransactionManager.pdf
 
 78) What is the TransactionTemplate? Why would you use it?
+	See
+	TransactionTemplate.pdf
+
 79) What is a transaction isolation level? How many do we have and how are they ordered?
-80) What is the difference between @EnableTransactionManagement and <tx:annotation-driven>?
+	See
+	Transaction isolation level.pdf
+
+80) What is the difference between @EnableTransactionManagement and <tx:annotation-driven />?
+	See
+	EnableTransactionManagement.pdf
+
 81) How does the JdbcTemplate support generic queries? How does it return objects and lists/maps of objects?
+
 82) What does transaction propagation mean?
+
 83) What happens if one @Transactional annotated method is calling another @Transactional annotated method on the same object instance?
+
 84) Where can the @Transactional annotation be used? What is a typical usage if you put it at class level?
+
 85) What does declarative transaction management mean?
+
 86) What is the default rollback policy? How can you override it?
+
 87) What is the default rollback policy in a JUnit test, when you use the SpringJUnit4ClassRunner and annotate your @Test annotated method with @Transactional?
+
 88) Why is the term "unit of work" so important and why does JDBC AutoCommit violate this pattern?
+
 89) What does JPA mean - what is ORM? What is the idea behind an ORM?
+
 90) What is a PersistenceContext and what is an EntityManager. What is the relationship between both?
+
 91) Why do you need the @Entity annotation. Where can it be placed?
+
 92) What do you need to do in Spring if you would like to work with JPA?
+
 93) Are you able to participate in a given transaction in Spring while working with JPA?
+
 94) What is the PlatformTransactionManager?
+	See 
+	Transactional and PlatformTransactionManager.pdf
+
 95) What does @PersistenceContext do?
+
 96) What are disadvantages or ORM? What are the benefits?
+
 97) What is an "instant repository"? (hint: recall Spring Data)
+
 98) How do you define an “instant” repository?
+
 99) What is @Query used for?
 
 Spring MVC and the Web Layer
