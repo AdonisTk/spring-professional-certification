@@ -11,7 +11,9 @@ public class AppMain {
 
         ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         UserService userService = context.getBean(UserService.class);
-        userService.performStatementCallback();
+        userService.performQuery();
+        userService.performQueryForObject();
+        userService.performQueryForList();
         context.close();
 
     }
