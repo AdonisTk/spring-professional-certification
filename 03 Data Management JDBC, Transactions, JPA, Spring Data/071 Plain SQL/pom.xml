@@ -8,7 +8,7 @@
     <artifactId>plainsql</artifactId>
     <version>0.0.1</version>
 
-    <name>aop</name>
+    <name>plainsql</name>
     <url>http://maven.apache.org</url>
 
     <properties>
