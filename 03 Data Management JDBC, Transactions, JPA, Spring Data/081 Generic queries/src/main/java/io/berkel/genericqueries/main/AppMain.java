@@ -14,6 +14,7 @@ public class AppMain {
         userService.performQuery();
         userService.performQueryForObject();
         userService.performQueryForList();
+        userService.performQueryForMap();
         context.close();
 
     }

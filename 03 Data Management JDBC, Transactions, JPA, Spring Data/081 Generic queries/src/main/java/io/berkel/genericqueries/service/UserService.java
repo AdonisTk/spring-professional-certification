@@ -48,5 +48,17 @@ public class UserService {
 
     }
 
+    public void performQueryForMap() {
+
+        Map<String, Object> cityFromQuery = jdbcTemplate.queryForMap("SELECT * FROM city WHERE ID = 1");
+        City city = new City();
+        city.setName((String) cityFromQuery.get("Name"));
+        city.setDistrict((String) cityFromQuery.get("District"));
+        city.setCountryCode((String)cityFromQuery.get("CountryCode"));
+        city.setPopulation((Integer)cityFromQuery.get("population"));
+        System.out.println(city);
+
+    }
+
 
 }
