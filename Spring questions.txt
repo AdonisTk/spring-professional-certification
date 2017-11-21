@@ -326,6 +326,8 @@ Aspect oriented programming
 	EnableTransactionManagement.pdf
 
 81) How does the JdbcTemplate support generic queries? How does it return objects and lists/maps of objects?
+	See
+	GitHub.com/fagaiera/springprofessionalcertification/
 
 82) What does transaction propagation mean?
 
