@@ -330,6 +330,9 @@ Aspect oriented programming
 	GitHub.com/fagaiera/springprofessionalcertification/
 
 82) What does transaction propagation mean?
+	See 
+	Transaction propagation spring-framework-reference.pdf
+	Propagation.pdf
 
 83) What happens if one @Transactional annotated method is calling another @Transactional annotated method on the same object instance?
 
