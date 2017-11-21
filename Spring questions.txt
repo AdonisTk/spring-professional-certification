@@ -414,6 +414,9 @@ Security
 REST
 
 135) What does REST stand for?
+	See 
+	REST.pdf
+	
 136) What is a resource?
 137) What are safe REST operations?
 138) What are idempotent operations? Why is idempotency important?
