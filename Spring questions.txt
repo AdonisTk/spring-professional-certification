@@ -347,6 +347,8 @@ Aspect oriented programming
 88) Why is the term "unit of work" so important and why does JDBC AutoCommit violate this pattern?
 
 89) What does JPA mean - what is ORM? What is the idea behind an ORM?
+	See
+	JPA_ORM.pdf
 
 90) What is a PersistenceContext and what is an EntityManager. What is the relationship between both?
 
