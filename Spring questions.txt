@@ -375,6 +375,8 @@ Aspect oriented programming
 Spring MVC and the Web Layer
 
 100) MVC is an abbreviation for a design pattern. What does it stand for and what is the idea behind it?
+	See MVC.pdf
+	
 101) Do you need spring-mvc.jar in your classpath or is it part of spring-core?
 102) What is the DispatcherServlet and what is it used for?
 103) Is the DispatcherServlet instantiated via an application context?
