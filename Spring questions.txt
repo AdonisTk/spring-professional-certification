@@ -75,7 +75,6 @@ Container, Dependency, and IOC
 	See
 	41. XML Schema-based configuration spring-framework-reference.pdf
 	
-
 23) How are you going to create a new instance of an ApplicationContext?
 24) What is a prefix?	
 	See
@@ -351,6 +350,8 @@ Aspect oriented programming
 	JPA_ORM.pdf
 
 90) What is a PersistenceContext and what is an EntityManager. What is the relationship between both?
+	See
+	PersistenceContext annotation and EntityManager API.pdf
 
 91) Why do you need the @Entity annotation. Where can it be placed?
 
