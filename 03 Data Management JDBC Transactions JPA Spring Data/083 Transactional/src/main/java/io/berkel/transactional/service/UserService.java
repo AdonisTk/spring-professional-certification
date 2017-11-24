@@ -14,7 +14,7 @@ public class UserService {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    @Transactional
+    @Transactional("transactionManager")
     public void performSQLQuery01() {
 
         jdbcTemplate.update(new PreparedStatementCreator() {
@@ -31,7 +31,7 @@ public class UserService {
 
     }
 
-    @Transactional
+    @Transactional("transactionManager")
     public void performSQLQuery02() {
 
         jdbcTemplate.update(new PreparedStatementCreator() {
@@ -48,7 +48,7 @@ public class UserService {
 
     }
 
-    @Transactional
+    @Transactional("transactionManager")
     public void performSQLQueries() {
 
         performSQLQuery01();
