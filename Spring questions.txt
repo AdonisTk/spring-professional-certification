@@ -334,7 +334,9 @@ Aspect oriented programming
 	Propagation.pdf
 
 83) What happens if one @Transactional annotated method is calling another @Transactional annotated method on the same object instance?
-
+	See
+	GitHub.com/fagaiera/springprofessionalcertification/
+	
 84) Where can the @Transactional annotation be used? What is a typical usage if you put it at class level?
 	See
 	Annotation Type Transactional.pdf
