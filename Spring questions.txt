@@ -367,6 +367,8 @@ Aspect oriented programming
 	PersistenceContext annotation and EntityManager API.pdf
 
 91) Why do you need the @Entity annotation. Where can it be placed?
+	See
+	Entity annotation.pdf
 
 92) What do you need to do in Spring if you would like to work with JPA?
 
