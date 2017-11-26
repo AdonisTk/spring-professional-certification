@@ -355,6 +355,8 @@ Aspect oriented programming
 	SpringJUnit4ClassRunner Transactional.pdf
 
 88) Why is the term "unit of work" so important and why does JDBC AutoCommit violate this pattern?
+	See
+	JDBC AutoCommit.pdf
 
 89) What does JPA mean - what is ORM? What is the idea behind an ORM?
 	See
