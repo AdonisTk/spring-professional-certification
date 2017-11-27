@@ -383,8 +383,12 @@ Aspect oriented programming
 	Transactional and PlatformTransactionManager.pdf
 
 95) What does @PersistenceContext do?
+	See
+	PersistenceContext annotation and EntityManager API.pdf
 
-96) What are disadvantages or ORM? What are the benefits?
+96) What are disadvantages of ORM? What are the benefits?
+	See
+	Disadvantages and benefits ORM.pdf
 
 97) What is an "instant repository"? (hint: recall Spring Data)
 
