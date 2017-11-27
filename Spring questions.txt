@@ -371,8 +371,12 @@ Aspect oriented programming
 	Entity annotation.pdf
 
 92) What do you need to do in Spring if you would like to work with JPA?
+	See
+	Working with JPA.pdf
 
 93) Are you able to participate in a given transaction in Spring while working with JPA?
+	See
+	JpaTransactionManager.pdf
 
 94) What is the PlatformTransactionManager?
 	See 
