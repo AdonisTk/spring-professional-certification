@@ -38,7 +38,9 @@ public class AppConfig {
 
 	@Bean
 	public UserService userService() {
+		
 		return new UserService();
+		
 	}
 
 	@Bean
