@@ -4,6 +4,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import io.berkel.springdata.model.City;
 
-public interface CityRepository extends CrudRepository<City,Long> {
+public interface CityRepository1 extends CrudRepository<City,Long> {
    
 }

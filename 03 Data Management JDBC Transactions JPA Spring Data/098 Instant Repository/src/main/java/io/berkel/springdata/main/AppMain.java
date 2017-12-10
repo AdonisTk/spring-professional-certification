@@ -12,7 +12,8 @@ public class AppMain {
 
         ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         CityService cityService = context.getBean(CityService.class);
-        System.out.println(cityService.findAll());
+        System.out.println(cityService.findAll1());
+        System.out.println(cityService.findAll2());
         context.close();
 
     }
