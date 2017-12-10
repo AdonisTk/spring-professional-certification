@@ -17,8 +17,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
-import io.berkel.springdata.service.UserService;
-
 @Configuration
 @EnableJpaRepositories(basePackages = { "io.berkel.springdata.model" })
 @EnableTransactionManagement
@@ -36,12 +34,6 @@ public class AppConfig {
 		
 	}
 
-	@Bean
-	public UserService userService() {
-		
-		return new UserService();
-		
-	}
 
 	@Bean
 	JpaTransactionManager transactionManager(EntityManagerFactory entityManagerFactory) {
