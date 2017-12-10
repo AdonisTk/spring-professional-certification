@@ -395,6 +395,7 @@ Aspect oriented programming
 98) How do you define an “instant” repository?
 	See
 	GitHub.com/fagaiera/springprofessionalcertification/
+	CrudRepository Repository RepositoryDefinition.pdf
 
 99) What is @Query used for?
 
