@@ -398,6 +398,9 @@ Aspect oriented programming
 	CrudRepository Repository RepositoryDefinition.pdf
 
 99) What is @Query used for?
+	See
+	4.3.4. Using @Query spring-data-jpa-reference.pdf
+
 
 Spring MVC and the Web Layer
 
