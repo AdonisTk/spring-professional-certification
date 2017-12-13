@@ -408,8 +408,17 @@ Spring MVC and the Web Layer
 	See MVC.pdf
 	
 101) Do you need spring-mvc.jar in your classpath or is it part of spring-core?
+	See
+	spring-webmvc dependency.pdf
+	
 102) What is the DispatcherServlet and what is it used for?
+	See
+	DispatcherServlet.pdf
+	22.2 The DispatcherServlet spring-framework-reference.pdf
+
 103) Is the DispatcherServlet instantiated via an application context?
+
+
 104) What is the root application context? How is it loaded?
 105) What is the @Controller annotation used for? How can you create a controller without an annotation?
 106) What is the ContextLoaderListener and what does it do?
