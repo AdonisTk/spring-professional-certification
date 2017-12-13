@@ -417,7 +417,8 @@ Spring MVC and the Web Layer
 	22.2 The DispatcherServlet spring-framework-reference.pdf
 
 103) Is the DispatcherServlet instantiated via an application context?
-
+	See
+	DispatcherServlet application context spring-framework-reference.pdf
 
 104) What is the root application context? How is it loaded?
 105) What is the @Controller annotation used for? How can you create a controller without an annotation?
