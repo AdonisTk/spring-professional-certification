@@ -440,7 +440,10 @@ Spring MVC and the Web Layer
 	Deployment Descriptor.pdf
 
 108) How is an incoming request mapped to a controller and mapped to a method?
-
+	See 
+	github.com/fagaiera/springprofessionalcertification/
+	Incoming request.pdf
+	
 109) What is the @RequestParam used for?
 
 110) What are the differences between @RequestParam and @PathVariable?
