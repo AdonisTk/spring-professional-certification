@@ -445,6 +445,9 @@ Spring MVC and the Web Layer
 	Incoming request.pdf
 	
 109) What is the @RequestParam used for?
+	See
+	RequestParam.pdf
+	github.com/fagaiera/springprofessionalcertification/
 
 110) What are the differences between @RequestParam and @PathVariable?
 
