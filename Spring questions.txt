@@ -457,9 +457,12 @@ Spring MVC and the Web Layer
 	github.com/fagaiera/springprofessionalcertification/
 
 111) What are some of the valid return types of a controller method?
-
+	See
+	Supported method return types spring-framework-reference.pdf
 
 112) What is a View and what's the idea behind supporting different types of View?
+	See
+	View.pdf
 
 113) How is the right View chosen when it comes to the rendering phase?
 
