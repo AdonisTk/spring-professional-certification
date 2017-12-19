@@ -450,6 +450,17 @@ Spring MVC and the Web Layer
 	github.com/fagaiera/springprofessionalcertification/
 
 110) What are the differences between @RequestParam and @PathVariable?
+	See
+	PathVariable.pdf
+	RequestParam.pdf
+	github.com/fagaiera/springprofessionalcertification/
+	
+	@PathVariable gets mapping method parameters from the URI itself while @RequestParam gets them from URI parameters.
+
+	for @PathVariable: http://www.foo.com/user/33				   
+
+	for @RequestParam: http://www.foo.com/user?id=33
+
 
 111) What are some of the valid return types of a controller method?
 
