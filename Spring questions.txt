@@ -478,10 +478,16 @@ Spring MVC and the Web Layer
 115) Why do you have access to the model in your View? Where does it come from?
 
 116) What is the purpose of the session scope?
+	See
+	Session scope page 71 sring-framework-reference.pdf
 
 117) What is the default scope in the web context?
+	See
+	Singleton scope page 68 spring-framework-reference.pdf
 
 118) Why are controllers testable artifacts?
+	See 
+	MockMvc.pdf
 
 119) What does the InternalResourceViewResolver do?
 
