@@ -490,6 +490,9 @@ Spring MVC and the Web Layer
 	MockMvc.pdf
 
 119) What does the InternalResourceViewResolver do?
+	See
+	InternalResourceViewResolver.pdf
+	ViewResolver.pdf
 
 Security
 
