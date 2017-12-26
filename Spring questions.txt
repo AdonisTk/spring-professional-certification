@@ -493,6 +493,7 @@ Spring MVC and the Web Layer
 	See
 	InternalResourceViewResolver.pdf
 	ViewResolver.pdf
+	A Guide to the ViewResolver in Spring MVC.pdf
 
 Security
 
