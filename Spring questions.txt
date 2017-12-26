@@ -476,6 +476,8 @@ Spring MVC and the Web Layer
 	Model.pdf
 
 115) Why do you have access to the model in your View? Where does it come from?
+	See 
+	Model View Controller DispatcherServlet.pdf
 
 116) What is the purpose of the session scope?
 	See
@@ -498,6 +500,10 @@ Spring MVC and the Web Layer
 Security
 
 120) What is the delegating filter proxy?
+	See
+	DelegatingFilterProxy.pdf
+	13.1 DelegatingFilterProxy spring-security-reference.pdf
+	
 121) What is the security filter chain?
 122) In the notes several predefined filters were shown. Do you recall what they did and what order they occurred in?
 123) Are you able to add and/or replace individual filters?
