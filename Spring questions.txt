@@ -505,8 +505,18 @@ Security
 	13.1 DelegatingFilterProxy spring-security-reference.pdf
 	
 121) What is the security filter chain?
+	See
+	FilterChainProxy.pdf
+	13.2 FilterChainProxy spring-security-reference.pdf
+	
 122) In the notes several predefined filters were shown. Do you recall what they did and what order they occurred in?
+	See
+	13.3 Filter Ordering spring-security-reference.pdf
+	
 123) Are you able to add and/or replace individual filters?
+	See
+	Add Custom Filter in Spring Security.pdf
+
 124) Is it enough to hide sections of my output (e.g. JSP-Page)?
 125) Why do you need the intercept-url?
 126) Why do you need method security? What type of object is typically secured at the method level (think of its purpose not its Java type).
