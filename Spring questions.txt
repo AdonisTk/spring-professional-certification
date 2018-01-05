@@ -518,6 +518,8 @@ Security
 	Add Custom Filter in Spring Security.pdf
 
 124) Is it enough to hide sections of my output (e.g. JSP-Page)?
+	See
+	30. JSP Tag Libraries spring-security-reference.pdf
 	
 125) Why do you need the intercept-url?
 126) Why do you need method security? What type of object is typically secured at the method level (think of its purpose not its Java type).
