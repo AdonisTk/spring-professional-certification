@@ -522,14 +522,28 @@ Security
 	30. JSP Tag Libraries spring-security-reference.pdf
 	
 125) Why do you need the intercept-url?
+	See
+	<intercept-url> spring-security-reference.pdf
+	
 126) Why do you need method security? What type of object is typically secured at the method level (think of its purpose not its Java type).
+	See
+	5.8 Method Security spring-security-reference.pdf
+	Method Security.pdf
+	
 127) Is security a cross cutting concern? How is it implemented internally?
+
 128) What do @Secured and @RolesAllowed do? What is the difference between them?
+
 129) What is a security context?
+
 130) In which order do you have to write multiple intercept-url's?
+
 131) How is a Principal defined?
+
 132) What is authentication and authorization? Which must come first?
+
 133) In which security annotation are you allowed to use SpEL?
+
 134) Does Spring Security support password hashing? What is salting?
 
 REST
