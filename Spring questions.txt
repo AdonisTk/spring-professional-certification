@@ -548,12 +548,23 @@ Security
 	13.6 Advanced Namespace Configuration spring-security-reference.pdf
 
 131) How is a Principal defined?
+	See
+	2.1 What is Spring Security? spring-security-reference.pdf
+	
 
 132) What is authentication and authorization? Which must come first?
+	See
+	9.3 Authentication spring-security-reference.pdf
+	9.5 Access-Control (Authorization) in Spring Security spring-security-reference.pdf
 
 133) In which security annotation are you allowed to use SpEL?
+	See
+	26.3 Method Security Expressions spring-security-reference.pdf
 
 134) Does Spring Security support password hashing? What is salting?
+	See
+	10.3 Password Encoding spring-security-reference.pdf
+	Salt Cryptography.pdf
 
 REST
 
