@@ -531,12 +531,21 @@ Security
 	Method Security.pdf
 	
 127) Is security a cross cutting concern? How is it implemented internally?
+	See
+	Cross-cutting concern.pdf
 
 128) What do @Secured and @RolesAllowed do? What is the difference between them?
+	See
+	5.8 Method Security spring-security-reference.pdf
+	RolesAllowed Annotation.pdf
 
 129) What is a security context?
+	See 
+	9.2 Core Components spring-security-reference.pdf
 
 130) In which order do you have to write multiple intercept-url's?
+	See
+	13.6 Advanced Namespace Configuration spring-security-reference.pdf
 
 131) How is a Principal defined?
 
