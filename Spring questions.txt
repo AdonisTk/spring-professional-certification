@@ -573,8 +573,14 @@ REST
 	REST.pdf
 	
 136) What is a resource?
+	See
+	Resources.pdf
+	
 137) What are safe REST operations?
 138) What are idempotent operations? Why is idempotency important?
+	See 
+	Safe and Idempotent.pdf
+
 139) Is REST scalable and/or interoperable?
 140) What are the advantages of the RestTemplate?
 141) Which HTTP methods does REST use?
