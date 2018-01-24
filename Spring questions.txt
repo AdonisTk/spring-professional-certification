@@ -582,6 +582,8 @@ REST
 	Safe and Idempotent.pdf
 
 139) Is REST scalable and/or interoperable?
+
+
 140) What are the advantages of the RestTemplate?
 141) Which HTTP methods does REST use?
 142) What is an HttpMessageConverter?
