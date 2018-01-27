@@ -586,9 +586,17 @@ REST
 
 140) What are the advantages of the RestTemplate?
 141) Which HTTP methods does REST use?
+	See
+	RestTemplate.pdf
+	
 142) What is an HttpMessageConverter?
+	See
+	HttpMessageConverter.pdf
+	
 143) Is REST normally stateless?
+
 144) What does @RequestMapping do?
+
 145) Is @Controller a stereotype? Is @RestController a stereotype?
 146) What is the difference between @Controller and @RestController?
 147) When do you need @ResponseBody?
