@@ -600,8 +600,17 @@ REST
 	Annotation RequestMapping.pdf
 
 145) Is @Controller a stereotype? Is @RestController a stereotype?
+	See
+	Annotation Controller.pdf
+	Annotation RestController.pdf
+
 146) What is the difference between @Controller and @RestController?
+	See
+	Controller and RestController.pdf
+
 147) When do you need @ResponseBody?
+
+
 148) What does @PathVariable do?
 149) What is the HTTP status return code for a successful DELETE statement?
 150) What does CRUD mean?
