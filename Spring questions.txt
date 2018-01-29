@@ -596,6 +596,8 @@ REST
 143) Is REST normally stateless?
 
 144) What does @RequestMapping do?
+	See
+	Annotation RequestMapping.pdf
 
 145) Is @Controller a stereotype? Is @RestController a stereotype?
 146) What is the difference between @Controller and @RestController?
