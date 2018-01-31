@@ -582,7 +582,8 @@ REST
 	Safe and Idempotent.pdf
 
 139) Is REST scalable and/or interoperable?
-
+	See
+	REST scalable and interoperable.pdf
 
 140) What are the advantages of the RestTemplate?
 141) Which HTTP methods does REST use?
@@ -594,6 +595,8 @@ REST
 	HttpMessageConverter.pdf
 	
 143) Is REST normally stateless?
+	See
+	REST is stateless.pdf
 
 144) What does @RequestMapping do?
 	See
@@ -609,7 +612,9 @@ REST
 	Controller and RestController.pdf
 
 147) When do you need @ResponseBody?
-
+	See
+	Annotation ResponseBody.pdf
+	github.com/fagaiera/springprofessionalcertification/
 
 148) What does @PathVariable do?
 149) What is the HTTP status return code for a successful DELETE statement?
