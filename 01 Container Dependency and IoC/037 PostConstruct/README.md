@@ -1,1 +1,0 @@
-# 37) How do you enable JSR-250 annotations like @PostConstruct?

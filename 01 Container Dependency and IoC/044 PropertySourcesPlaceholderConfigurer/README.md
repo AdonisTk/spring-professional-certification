@@ -1,1 +1,0 @@
-# 44) What is a PropertySourcesPlaceholderConfigurer used for?

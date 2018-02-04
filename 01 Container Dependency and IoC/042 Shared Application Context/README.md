@@ -1,1 +1,0 @@
-# 42) How can you create a shared application context in a JUnit test?
