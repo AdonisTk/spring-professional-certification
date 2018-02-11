@@ -13,9 +13,13 @@ public class MainApplication {
 		ExampleBeanImpl exampleBean = (ExampleBeanImpl) context.getBean("exampleBean");
 		CachingMovieLister cachingMovieLister = (CachingMovieLister) context.getBean("cachingMovieLister");
 
+		System.out.println("########################################## After init ##########################################");
+
 		msg.printMessage();
 		exampleBean.printMessage();
         cachingMovieLister.start();
+
+        System.out.println("########################################## Before destroy ##########################################");
 
         context.close();
 
