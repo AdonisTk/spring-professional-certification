@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="bar1" class="io.berkel.dependencyinjection.setter.Bar1">
+        <property name="var1" value="1234"/>
+        <property name="var2" value="Hello"/>
+    </bean>
+
+    <bean id="bar2" class="io.berkel.dependencyinjection.setter.Bar2"/>
+
+    <bean id="foo" class="io.berkel.dependencyinjection.setter.Foo">
+        <property name="bar1" ref="bar1"/>
+        <property name="bar2" ref="bar2"/>
+    </bean>
+
+</beans>
