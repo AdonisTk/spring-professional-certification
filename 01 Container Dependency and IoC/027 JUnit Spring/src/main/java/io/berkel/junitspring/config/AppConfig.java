@@ -1,4 +1,4 @@
-package io.berkel.junitspring.main;
+package io.berkel.junitspring.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

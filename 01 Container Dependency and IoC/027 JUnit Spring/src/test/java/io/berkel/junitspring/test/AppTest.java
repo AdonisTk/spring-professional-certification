@@ -14,7 +14,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.support.AnnotationConfigContextLoader;
 
-import io.berkel.junitspring.main.AppConfig;
+import io.berkel.junitspring.config.AppConfig;
 import io.berkel.junitspring.model.Order;
 import io.berkel.junitspring.service.SampleService;
 
