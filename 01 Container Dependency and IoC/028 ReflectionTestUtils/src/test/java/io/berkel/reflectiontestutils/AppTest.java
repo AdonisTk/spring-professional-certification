@@ -10,7 +10,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.support.AnnotationConfigContextLoader;
 import org.springframework.test.util.ReflectionTestUtils;
 
-import io.berkel.reflectiontestutils.main.AppConfig;
+import io.berkel.reflectiontestutils.config.AppConfig;
 import io.berkel.reflectiontestutils.model.Person;
 import io.berkel.reflectiontestutils.service.PersonService;
 

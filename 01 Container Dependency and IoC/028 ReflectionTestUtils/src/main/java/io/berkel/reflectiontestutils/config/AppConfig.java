@@ -1,4 +1,4 @@
-package io.berkel.reflectiontestutils.main;
+package io.berkel.reflectiontestutils.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
