@@ -17,6 +17,7 @@ public class UserService {
     private JdbcTemplate jdbcTemplateSakilaDb;
 
     public void performRowCallbackHandler() {
+
         jdbcTemplateWorldDb.query("SELECT Name FROM city ORDER BY ID", new RowCallbackHandler() {
                 @Override
                 public void processRow(ResultSet resultSet) throws SQLException {
@@ -25,9 +26,11 @@ public class UserService {
                     }
                 }
             });
+
     }
 
     public  void performPreparedStatementCreator() {
+
         jdbcTemplateWorldDb.update(new PreparedStatementCreator() {
             @Override
             public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
@@ -39,6 +42,7 @@ public class UserService {
                 return ps;
             }
         });
+
     }
 
     @SuppressWarnings("unchecked")
@@ -68,6 +72,7 @@ public class UserService {
             }
         },paramList);
         System.out.println(resultMap.get("msg"));
+
     }
 
 }
