@@ -12,6 +12,7 @@ public class UserAspect {
 
     @AfterThrowing(pointcut = "pointcut()", throwing = "exception")
     public void adviceForExceptionThrowing(Exception exception) throws Throwable {
+        System.out.println("Using @AfterThrowing annotation");
         System.out.println("###### " + exception.getMessage() + " ######");
     }
 
