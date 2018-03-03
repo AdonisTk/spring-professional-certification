@@ -8,19 +8,24 @@
 
 
     <bean id="userService" class="io.berkel.aop.xml.service.UserService" />
+
     <bean id="userAspect" class="io.berkel.aop.xml.aspect.UserAspect" />
 
     <aop:config>
-        <aop:aspect id = "userAspect" ref = "userAspect">
 
-            <aop:pointcut id = "userBeforeAdvice" expression = "execution(* io.berkel.aop.xml.service.UserService.someUserService(..))"/>
-            <aop:before pointcut-ref = "userBeforeAdvice" method = "userBeforeAdvice"/>
+        <aop:aspect id="userAspect" ref="userAspect">
 
-            <aop:pointcut id = "userAfterAdvice" expression = "execution(* io.berkel.aop.xml.service.UserService.someUserService(..))"/>
-            <aop:after pointcut-ref = "userAfterAdvice" method = "userAfterAdvice"/>
+            <aop:pointcut id="userBeforeAdvice" expression="execution(* io.berkel.aop.xml.service.UserService.someUserService(..))"/>
+
+            <aop:before pointcut-ref="userBeforeAdvice" method="userBeforeAdvice"/>
+
+            <aop:pointcut id="userAfterAdvice" expression="execution(* io.berkel.aop.xml.service.UserService.someUserService(..))"/>
+
+            <aop:after pointcut-ref="userAfterAdvice" method="userAfterAdvice"/>
 
 
         </aop:aspect>
+
     </aop:config>
 
 </beans>
