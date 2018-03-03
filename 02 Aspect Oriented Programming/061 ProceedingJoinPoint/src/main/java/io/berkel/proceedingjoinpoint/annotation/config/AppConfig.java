@@ -14,6 +14,7 @@ public class AppConfig {
     public UserService userService(){
         return new UserService();
     }
+
     @Bean
     public UserAspect userAspect(){
         return new UserAspect();

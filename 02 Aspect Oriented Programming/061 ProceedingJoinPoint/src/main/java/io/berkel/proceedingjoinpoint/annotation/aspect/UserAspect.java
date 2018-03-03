@@ -1,11 +1,9 @@
 package io.berkel.proceedingjoinpoint.annotation.aspect;
 
-import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.*;
-import org.aspectj.lang.reflect.MethodSignature;
-
-import java.util.Arrays;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
 
 @Aspect
 public class UserAspect {
@@ -15,7 +13,7 @@ public class UserAspect {
 
     @Around("pointcut()")
     public void aroundAdvice(ProceedingJoinPoint pjp) throws Throwable {
-        System.out.println("Before"); // will print "Before" before the execution of printSomething()
+        System.out.println("Before");
         pjp.proceed();
         System.out.println("After");
     }
