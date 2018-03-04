@@ -1,39 +1,34 @@
 package io.berkel.springdata.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "city")
 public class City {
 
-	@Id
+    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-	private Long ID;
-	
+    private Long ID;
+
     @Column(name = "Name")
     private String name;
-    
+
     @Column(name = "CountryCode")
     private String countryCode;
-    
+
     @Column(name = "District")
     private String district;
-    
+
     @Column(name = "Population")
     private Integer population;
-    
-	public Long getID() {
-		return ID;
-	}
 
-	public void setID(Long iD) {
-		ID = iD;
-	}
+    public Long getID() {
+        return ID;
+    }
+
+    public void setID(Long iD) {
+        ID = iD;
+    }
 
     public String getName() {
         return name;

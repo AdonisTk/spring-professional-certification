@@ -1,10 +1,9 @@
 package io.berkel.springdata.main;
 
-import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
 import io.berkel.springdata.config.AppConfig;
 import io.berkel.springdata.service.CityService;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class AppMain {
 
