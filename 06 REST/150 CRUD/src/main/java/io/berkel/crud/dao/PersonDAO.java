@@ -1,6 +1,6 @@
-package com.journaldev.spring.dao;
+package io.berkel.crud.dao;
 
-import com.journaldev.spring.model.Person;
+import io.berkel.crud.model.Person;
 
 import java.util.List;
 

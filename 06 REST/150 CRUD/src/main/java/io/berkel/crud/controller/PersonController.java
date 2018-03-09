@@ -1,7 +1,7 @@
-package com.journaldev.spring;
+package io.berkel.crud.controller;
 
-import com.journaldev.spring.model.Person;
-import com.journaldev.spring.service.PersonService;
+import io.berkel.crud.model.Person;
+import io.berkel.crud.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;

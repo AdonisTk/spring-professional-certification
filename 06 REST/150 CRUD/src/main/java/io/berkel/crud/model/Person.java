@@ -1,4 +1,4 @@
-package com.journaldev.spring.model;
+package io.berkel.crud.model;
 
 import javax.persistence.*;
 
@@ -41,7 +41,7 @@ public class Person {
 	
 	@Override
 	public String toString(){
-		return "id="+id+", name="+name+", country="+country;
+		return "id = " + id + ", name = " + name + ", country = " + country;
 	}
 
 }

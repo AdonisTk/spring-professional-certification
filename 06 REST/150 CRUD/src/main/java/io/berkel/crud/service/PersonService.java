@@ -1,6 +1,6 @@
-package com.journaldev.spring.service;
+package io.berkel.crud.service;
 
-import com.journaldev.spring.model.Person;
+import io.berkel.crud.model.Person;
 
 import java.util.List;
 

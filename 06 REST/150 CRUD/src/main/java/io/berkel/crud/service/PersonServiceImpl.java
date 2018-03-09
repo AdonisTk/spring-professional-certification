@@ -1,7 +1,7 @@
-package com.journaldev.spring.service;
+package io.berkel.crud.service;
 
-import com.journaldev.spring.dao.PersonDAO;
-import com.journaldev.spring.model.Person;
+import io.berkel.crud.dao.PersonDAO;
+import io.berkel.crud.model.Person;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
