@@ -1,18 +1,7 @@
 package com.journaldev.spring.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
-/**
- * Entity bean with JPA annotations
- * Hibernate provides JPA implementation
- * @author pankaj
- *
- */
 @Entity
 @Table(name="PERSON")
 public class Person {
@@ -54,4 +43,5 @@ public class Person {
 	public String toString(){
 		return "id="+id+", name="+name+", country="+country;
 	}
+
 }

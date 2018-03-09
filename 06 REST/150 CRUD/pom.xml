@@ -2,18 +2,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.journaldev.spring</groupId>
-    <artifactId>SpringMVCHibernate</artifactId>
-    <name>SpringMVCHibernate</name>
+
+    <groupId>io.berkel</groupId>
+    <artifactId>crud</artifactId>
     <packaging>war</packaging>
-    <version>1.0.0-BUILD-SNAPSHOT</version>
+    <version>0.0.1</version>
+
     <properties>
-        <java-version>1.6</java-version>
+
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
         <org.springframework-version>4.0.3.RELEASE</org.springframework-version>
         <org.aspectj-version>1.7.4</org.aspectj-version>
         <org.slf4j-version>1.7.5</org.slf4j-version>
         <hibernate.version>4.3.5.Final</hibernate.version>
+
     </properties>
+
     <dependencies>
         <!-- Spring -->
         <dependency>
@@ -147,17 +154,10 @@
             <version>5.1.38</version>
         </dependency>
 
-        <!-- Test -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.7</version>
-            <scope>test</scope>
-        </dependency>
-
     </dependencies>
     <build>
         <plugins>
+
             <plugin>
                 <artifactId>maven-eclipse-plugin</artifactId>
                 <version>2.9</version>
@@ -172,6 +172,7 @@
                     <downloadJavadocs>true</downloadJavadocs>
                 </configuration>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -184,15 +185,10 @@
                     <showDeprecation>true</showDeprecation>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>1.2.1</version>
-                <configuration>
-                    <mainClass>org.test.int1.Main</mainClass>
-                </configuration>
-            </plugin>
+
         </plugins>
-        <finalName>${project.artifactId}</finalName>
+
+        <finalName>crud</finalName>
+
     </build>
 </project>
