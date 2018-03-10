@@ -3,7 +3,6 @@ package io.berkel.crud.controller;
 import io.berkel.crud.model.Person;
 import io.berkel.crud.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -14,13 +13,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class PersonController {
 
+    @Autowired
     private PersonService personService;
-
-    @Autowired(required = true)
-    @Qualifier(value = "personService")
-    public void setPersonService(PersonService ps) {
-        this.personService = ps;
-    }
 
     @RequestMapping(value = "/persons", method = RequestMethod.GET)
     public String listPersons(Model model) {
