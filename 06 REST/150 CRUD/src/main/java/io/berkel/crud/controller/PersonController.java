@@ -18,9 +18,11 @@ public class PersonController {
 
     @RequestMapping(value = "/persons", method = RequestMethod.GET)
     public String listPersons(Model model) {
+
         model.addAttribute("person", new Person());
-        model.addAttribute("listPersons", this.personService.listPersons());
+        model.addAttribute("listPersons", personService.listPersons());
         return "person";
+
     }
 
     //For add and update person both
@@ -29,12 +31,11 @@ public class PersonController {
 
         if (p.getId() == 0) {
             //new person, add it
-            this.personService.addPerson(p);
+            personService.addPerson(p);
         } else {
             //existing person, call update
-            this.personService.updatePerson(p);
+            personService.updatePerson(p);
         }
-
         return "redirect:/persons";
 
     }
@@ -42,15 +43,18 @@ public class PersonController {
     @RequestMapping("/remove/{id}")
     public String removePerson(@PathVariable("id") int id) {
 
-        this.personService.removePerson(id);
+        personService.removePerson(id);
         return "redirect:/persons";
+
     }
 
     @RequestMapping("/edit/{id}")
     public String editPerson(@PathVariable("id") int id, Model model) {
-        model.addAttribute("person", this.personService.getPersonById(id));
-        model.addAttribute("listPersons", this.personService.listPersons());
+
+        model.addAttribute("person", personService.getPersonById(id));
+        model.addAttribute("listPersons", personService.listPersons());
         return "person";
+
     }
 
 }
