@@ -2,13 +2,14 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ page session="false" %>
+
 <html>
 <head>
-	<title>Person Page</title>
+	<title>Person page</title>
 </head>
 <body>
 <h1>
-	Person Page
+	Person page
 </h1>
 
 <c:url var="addAction" value="/person/add" ></c:url>
