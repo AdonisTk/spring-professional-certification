@@ -18,4 +18,5 @@ public class WebConfiguration extends WebMvcConfigurerAdapter {
     public void configureMessageConverters(List<HttpMessageConverter<?>> httpMessageConverters) {
         httpMessageConverters.add(new BookCaseMessageConverter(new MediaType("text", "csv")));
     }
+
 }

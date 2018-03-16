@@ -39,5 +39,4 @@ public class BookCaseMessageConverterTest {
         Assert.assertEquals(bookCaseCsv, outputMessage.getBodyAsString());
     }
 
-
 }
