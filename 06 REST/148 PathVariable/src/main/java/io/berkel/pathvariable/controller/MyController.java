@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class MyController {
 
-   @GetMapping("/request/{firstName}/{lastName}")
-   @ResponseBody
-   public String handler(@PathVariable(name="firstName") String firstName, @PathVariable(name="lastName") String lastName) {
+    @GetMapping("/request/{firstName}/{lastName}")
+    @ResponseBody
+    public String handler(@PathVariable(name = "firstName") String firstName, @PathVariable(name = "lastName") String lastName) {
 
-      return "URL parameters:  <br>"  + " firstName = " + firstName + " <br>" + " lastName = " + lastName;
+        return "URL parameters:  <br>" + " firstName = " + firstName + " <br>" + " lastName = " + lastName;
 
-   }
+    }
 
 }
