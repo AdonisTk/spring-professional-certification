@@ -13,15 +13,15 @@ import org.springframework.web.servlet.view.JstlView;
 @ComponentScan(basePackages = {"io.berkel.responsestatus.controller"})
 public class WebConfig extends WebMvcConfigurerAdapter {
 
-   @Bean
-   public InternalResourceViewResolver resolver() {
+    @Bean
+    public InternalResourceViewResolver resolver() {
 
-      InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-      resolver.setViewClass(JstlView.class);
-      resolver.setPrefix("/WEB-INF/views/");
-      resolver.setSuffix(".jsp");
-      return resolver;
+        InternalResourceViewResolver resolver = new InternalResourceViewResolver();
+        resolver.setViewClass(JstlView.class);
+        resolver.setPrefix("/WEB-INF/views/");
+        resolver.setSuffix(".jsp");
+        return resolver;
 
-   }
+    }
 
 }
