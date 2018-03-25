@@ -4,7 +4,7 @@ import io.berkel.annotations.dao.EmployeeDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service("employeeService")
+@Service
 public class EmployeeServiceImpl implements EmployeeService {
 
 

@@ -1,12 +1,12 @@
 package io.berkel.annotations.dao;
 
 import io.berkel.annotations.model.Employee;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
+@Repository
 public class EmployeeDAOImpl implements EmployeeDAO {
 
     @Override
