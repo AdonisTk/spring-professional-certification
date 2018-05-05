@@ -9,10 +9,13 @@ public class SpelCollection {
 
     @Value("#{carPark.carsByDriver['Driver1']}")
     private Car driver1Car;
+
     @Value("#{carPark.carsByDriver['Driver2']}")
     private Car driver2Car;
+
     @Value("#{carPark.cars[0]}")
     private Car firstCarInPark;
+
     @Value("#{carPark.cars.size()}")
     private Integer numberOfCarsInPark;
 

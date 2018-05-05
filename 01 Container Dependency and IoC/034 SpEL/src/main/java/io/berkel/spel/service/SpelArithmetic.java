@@ -20,11 +20,13 @@ public class SpelArithmetic {
 
     @Value("#{36 / 2}")
     private double divide;
+
     @Value("#{36 div 2}")
     private double divideAlphabetic;
 
     @Value("#{37 % 10}")
     private double modulo;
+
     @Value("#{37 mod 10}")
     private double moduloAlphabetic;
 
