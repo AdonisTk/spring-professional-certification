@@ -17,7 +17,7 @@ public class UserAspect {
         System.out.println("Find my advice before user service.");
     }
 
-    @After("execution(* io.berkel.pointcut.annotation.service.*.*(..))")
+    @After("ourFirstPointcut()")
     public void userAfterAdvice(){
         System.out.println("Find my advice after user service.");
     }
