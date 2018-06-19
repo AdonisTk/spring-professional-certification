@@ -16,4 +16,9 @@ public class Foo {
     public Bar1 getBar1() {
         return bar1;
     }
+
+    public Bar2 getBar2() {
+        return bar2;
+    }
+
 }
