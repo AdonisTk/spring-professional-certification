@@ -7,9 +7,8 @@ public class Employee {
 
     private Company company;
 
-    @Value("#{'Fabio Gaiera'}")
+    @Value("Fabio Gaiera")
     private String name;
-
 
     @Autowired
     public Employee(Company company) {

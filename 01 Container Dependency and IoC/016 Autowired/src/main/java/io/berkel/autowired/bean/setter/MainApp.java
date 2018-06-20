@@ -11,9 +11,9 @@ public class MainApp {
         Employee employee = context.getBean(Employee.class);
         System.out.println("Company Name: " + employee.getCompany().getCompName());
         System.out.println("Location: " + employee.getCompany().getLocation());
+        System.out.println("Name: " + employee.getName());
         context.close();
 
     }
-
 
 }
