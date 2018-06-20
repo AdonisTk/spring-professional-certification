@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 public class Employee {
 
     public String getEmpMsg() {
-        return "I am Estefania Ciardi";
+        return "I am Stefania Ciardi";
     }
 
 }
