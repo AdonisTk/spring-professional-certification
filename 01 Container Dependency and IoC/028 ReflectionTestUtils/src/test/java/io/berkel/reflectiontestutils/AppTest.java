@@ -25,7 +25,7 @@ public class AppTest {
 	public void setField() {
 		Person person = personService.newPerson();
 		ReflectionTestUtils.setField(person, "id", 123456);
-		assertEquals("Verifying that the person's ID (private field in a superclass) was set.", 123456, person.getId());
+		assertEquals("Verifying that the person's ID (private field in the Person class) was set.", 123456, person.getId());
 	}
 
 }
